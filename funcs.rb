@@ -30,3 +30,20 @@ puts rotate_array(test_array1, -2).inspect
 puts rotate_array(["cat", "dog", "mouse", "shoe"], -1).inspect
 
 puts rotate_array([1, 2, 3, 4, 5], -1).inspect
+
+
+
+def factorial(num)
+	if num < 0
+		return "undefined"
+  elsif num == 0 || num == 1
+    return 1
+  else
+    num * factorial(num - 1)
+  end
+end
+
+
+puts factorial(6)
+puts factorial(7)
+puts factorial(-5)
